@@ -1,14 +1,13 @@
 # CCNA Journey: Troubleshooting Lab
 
-## 🌐 Network Topology Overview
-* **Clients:** Local laptops connected via switch.
-* **Switching:** Local switching for internal traffic.
-* **Edge:** Router 2911 connecting the LAN to the Internet.
-* **Security:** ASA 5505 Firewall integration.
+## 🌐 Initial Topology
+![Network Diagram](../Images/Day-01-Network-Diagram.png)
 
 ---
 
 ## 🛠 Troubleshooting Log
+
+![Setting Firewall1](../Images/Day-01-Setting-Firewall1.png)
 
 ### 1. Connectivity Issue: ASA 5505 to Router 2911
 * **Problem:** The Cisco ASA 5505 Firewall failed to establish a link/connection with the Cisco 2911 Router.

@@ -5,6 +5,11 @@
 
 ---
 
+## 📍 Updated Topology
+![Day 02 Topology](../Images/Day-02-topology.jpg)
+
+---
+
 ## 🛠 Troubleshooting & Corrections
 
 ### 1. The "Duplicate IP" Discovery
@@ -26,9 +31,15 @@ Successfully established communication between **Firewall1** and **Router1** usi
     * **VLAN 2 (Outcome):** Designated for the connection from Firewall1 to the Internet.
 * **Traffic Control:** Configured **Access-List (ACL)** and **Access-Group** to permit ICMP traffic (ping), allowing the devices to respond to requests securely.
 
+**Test Ping from Router1 to Firewall1:**
+![Ping Router1 to Firewall1](../Images/Day-02-Test-Ping-from-Router1-to-Firewall1.png)
+
 ### 3. End-to-End Routing
 * Successfully implemented **Static Routes** on the Firewall.
 * **Result:** **PC1** and **PC2** can now successfully ping the Firewall interface. This confirms that the internal routing table and security levels are correctly configured.
+
+**Test Ping from PC1 to Firewall1:**
+![Ping PC1 to Firewall1](../Images/Day-02-Test-Ping-from-PC1-to-Firewall1.png)
 
 ---
 

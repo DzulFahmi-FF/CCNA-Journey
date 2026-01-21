@@ -7,7 +7,7 @@ This is my personal learning lab. It's not a finished project, just a place for 
 
 | Jeremy’s IT Lab – Video Day | Topic | GitHub Log(s) |
 |-----------------------------|-------|---------------|
-| Day 1 | Network Devices & Basic Topology | [Day 01](Logs/Day-01.md), [Day 02](Logs/Day-02.md) |
+| Day 1 | Network Devices & Basic Topology | [Day 01](Logs/Day-01.md), [Day 02](Logs/Day-02.md), [Day 03](Logs/Day-03.md) |
 
 ---
 

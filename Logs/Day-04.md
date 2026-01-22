@@ -26,7 +26,8 @@ I spent considerable time troubleshooting why the servers wouldn't connect.
 
 ### 3. Tokyo Branch Topology
 I designed and implemented the infrastructure for the Tokyo Branch, which includes **Router2**, **Firewall2**, and a Server Farm.
-* **Segmentation:** * **VLAN 1 (Inside):** For the internal server network.
+* **Segmentation:** 
+    * **VLAN 1 (Inside):** For the internal server network.
     * **VLAN 2 (Outside):** For the connection leading back to the internet/New York branch.
 
 **Tokyo Topology Diagram:**
@@ -34,7 +35,6 @@ I designed and implemented the infrastructure for the Tokyo Branch, which includ
 
 ### 4. Advanced Routing & Policy Logic
 To ensure packets can travel from the New York Branch to Tokyo:
-* **Default Routing:** Configured a default route (`0.0.0.0 0.0.0.0 192.168.10.100`) to direct unknown traffic to the gateway.
 * **ASA Implementation:** On **Firewall1**, I re-established the object networks and service policies (class-map/policy-map).
 * **ICMP Access:** Re-applied the `IZIN_PING` access-list to the **Outside** interface using an access-group to allow return traffic from the servers.
 

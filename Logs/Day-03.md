@@ -41,7 +41,7 @@ To allow the ping to be successful from PC1 to the Internet:
 * **Route Update:** Added a default static route to the internet gateway.
 
 **Updated Routing Configuration:**
-![Update Route](../Images/Dy-03-Setting-Firewall1-Update-Route.png)
+![Update Route](../Images/Day-03-Setting-Firewall1-Update-Route.png)
 
 ---
 

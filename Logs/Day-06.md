@@ -51,6 +51,7 @@ I implemented specific subnet masks to mirror professional real-world environmen
 While following Jeremy's video, I encountered a physical layer mismatch on the connection between **Router1** and **Router3**.
 
 * **The Problem:** The default module in the lab was **FGE** (Fiber Gigabit Ethernet), which operates on *Multimode*. However, I intended to simulate a long-distance link using *Single Mode*.
+
 **Module does not Match**
 ![Module does not Match](../Images/Day-06-R1-to-R3-Not-Connected.png)
 
@@ -59,6 +60,7 @@ While following Jeremy's video, I encountered a physical layer mismatch on the c
     * **Router3 (Hybrid Setup):**
         * Interface to R1: Used **FGE-SM** (to match Router1).
         * Interface to R4: Kept as standard **FGE**.
+
 **Appropriate Module**
 ![Appropriate Module](../Images/Day-06-R1-to-R3-Connected.png)
 
@@ -73,6 +75,7 @@ After configuring the specific routes for the new **/25** networks:
     * **Ping:** PC1 ➔ PC3 (Success)
     * **Ping:** PC1 ➔ Server1 (Success)
     * **Traceroute:** Validated the path through the new Single Mode link.
+
 **Test Ping and TraceRoute**
 ![Test Ping and TraceRoute](../Images/Day-06-Ping-and-TraceRoute-from-PC1-to-PC3-and-Server1-Success.png)
 

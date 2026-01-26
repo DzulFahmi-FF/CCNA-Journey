@@ -9,6 +9,7 @@ This is my personal learning lab. It's not a finished project, just a place for 
 |-----------------------------|-------|---------------|
 | Day 1 | Network Devices | [Day 01](Logs/Day-01.md), [Day 02](Logs/Day-02.md), [Day 03](Logs/Day-03.md), [Day 04](Logs/Day-04.md), [Day 05](Logs/Day-05.md) |
 | Day 2 | Interfaces and Cables | [Day 06](Logs/Day-06.md) |
+| Day 3 | TCP/IP and OSI Model | [Day 07](Logs/Day-07.md) |
 
 ---
 

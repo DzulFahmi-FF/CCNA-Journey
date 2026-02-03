@@ -52,9 +52,9 @@ After clearing the tables on **SW1** and **SW2** and pinging from PC1 to PC3, he
 SW1 populated 4 entries:
 * `0242.0023.a100` → **PC1** (Gi0/1) - *Direct*
 * `0242.1c49.b700` → **PC2** (Gi0/2) - *Direct*
-* `0242.e0ed.5e00` → **SW2** (Gi0/0) - *Source MAC from the other switch*
+* `0242.e0ed.5e00` → **PC3** (Gi0/0, via SW2) - *Learned from source MAC of frames returning from PC3*
 * `0ccc.789f.0000` → **Bridge/STP MAC** (Gi0/0)
-* *Note: MAC PC3/PC4 are NOT in SW1 because their source frames haven't reached SW1's ports directly.*
+* *Note: MAC PC3 does appear in SW1 because PC3 sends frames (ARP Reply / ICMP Echo Reply) back toward PC1, and those frames enter SW1 through the link to SW2. Therefore, SW1 learns PC3’s MAC from the source MAC of returning traffic, not because PC3 is directly connected.*
 
 ### SW2 MAC Table
 SW2 also populated 4 entries:
@@ -66,8 +66,10 @@ SW2 also populated 4 entries:
 
 ### 💡 Conclusion on MAC Learning
 A switch only learns a MAC address when it receives a frame; it records the **Source MAC** and the port it entered. 
-* SW2 knows PC1 & PC2 because their frames passed through to reach PC3. 
-* SW2 knows PC3 because PC3 replied directly to its port.
+* SW1 learns PC1 & PC2 from frames originating directly from them. 
+* SW1 also learns PC3 from ARP Reply / ICMP Echo Reply frames sent back by PC3 through SW2.
+* SW2 learns PC1 & PC2 from traffic forwarded by SW1.
+* SW2 learns PC3 because PC3 is directly connected.
 
 ---
 

@@ -11,6 +11,7 @@ This is my personal learning lab. It's not a finished project, just a place for 
 | Day 2 | Interfaces and Cables | [Day 06](Logs/Day-06.md) |
 | Day 3 | TCP/IP and OSI Model | [Day 07](Logs/Day-07.md) |
 | Day 4 | Basic Device Security | [Day 08](Logs/Day-08.md) |
+| Day 5, 6 | Ethernet LAN Switching | [Day 09](Logs/Day-09.md) |
 
 ---
 
